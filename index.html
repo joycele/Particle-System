@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Particle Simulation System</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <br>
+    <form>
+        <label>Choose a simulation:</label>
+        <select id="simSelection" onchange="updateCanvas(this, 'song')">
+            <option hidden selected></option>
+            <option>snow</option>
+            <option>music</option>
+            <option>sunlight</option>
+            <option>leaves</option>
+        </select>
+    </form>
+    <br>
+    <button id="playPause" class="userBtn" onclick="playPause()">Play/Pause</button>
+    <button id="addSim" class="userBtn" onclick="addSim()">Add a simulation</button>
+    <br><br>
+    <canvas id="canvas"> 
+        <audio loop id="song"></audio>
+        <div id="leaf"></div>
+    </canvas>
+    <canvas id="animation"></canvas>
+    <div id="addSimForm">
+      <form id="newForm">
+        <input id="name" placeholder="Name of simulation (ie. money)" type="text" required />
+        <input id="count" placeholder="Number of particles (ie. 50)" type="number" min=1 required />
+        <input id="size" placeholder="Particle size (ie. 50)" type="number" min=1 required />
+        <input id="velX" placeholder="X velocity (ie. 1)" type="number" required />
+        <input id="velY" placeholder="Y velocity (ie. 1)" type="number" required />
+        <input id="design" placeholder="Type a particle design (ie. $)" type="text" required />
+        <input class="formBtn" type="submit" value="Add">
+        <button class="formBtn" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

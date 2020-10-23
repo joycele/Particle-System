@@ -1,0 +1,30 @@
+canvas {
+    position: absolute;
+    border: 1px solid #000;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+.userBtn {
+    margin: 5px;
+}
+#addSimForm { 
+    display: none;
+    border: 1px solid black; 
+    padding: 2em;
+    width: 400px;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    top:5%;
+    left:35%;
+}
+input, .formBtn { 
+    margin: .8em auto;
+    font-family: inherit; 
+    text-transform: inherit; 
+    font-size: inherit;
+    display: block; 
+    width: 280px; 
+    padding: .4em;
+  }
