@@ -1,5 +1,4 @@
 # Particle-System
-in-browser particle system
 
 
 Languages used:  HTML, CSS, Javascript
